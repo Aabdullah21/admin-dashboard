@@ -8,12 +8,12 @@
 
 :root {
     --blue: #0ea5e9;
-    --gray: #9ca3af;
+    --gray: #d1d5db;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
+    background-color: var(--gray);
 
 }
 
@@ -31,6 +31,7 @@ ul {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding-bottom: 7px;
 
     display: flex;
     align-items: center;
@@ -40,6 +41,9 @@ ul {
 .sidebar {
     background-color: var(--blue);
     padding: 24px;
+
+    display: grid;
+    gap: 50px;
 }
 
 .logo {

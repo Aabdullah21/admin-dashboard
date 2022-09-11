@@ -30,6 +30,9 @@ ul {
 .sidebar a {
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .sidebar {

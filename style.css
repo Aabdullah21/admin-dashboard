@@ -19,3 +19,9 @@ ul {
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
+
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}

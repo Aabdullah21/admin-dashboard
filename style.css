@@ -49,3 +49,39 @@ ul {
 .logo {
     font-size: 24px;
 }
+
+.header {
+    padding: 16px;
+    background-color: white;
+    grid-column: 2 / 3;
+
+}
+
+.header .upper-part {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.header .upper-part input {
+    width: 50%;
+    border-radius: 20px;
+    background: var(--gray);
+    padding: 7px;
+    border: none;
+}
+
+.header .bell {
+    margin-left: auto;
+}
+
+.header .my-picture {
+    border-radius: 50%;
+}
+
+.header .upper-part .personal-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}

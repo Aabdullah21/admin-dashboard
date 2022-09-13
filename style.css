@@ -9,6 +9,7 @@
 :root {
     --blue: #0ea5e9;
     --gray: #d1d5db;
+    --orange: #f59e0b;
 }
 
 body {
@@ -41,9 +42,10 @@ ul {
 .sidebar {
     background-color: var(--blue);
     padding: 24px;
-
+    grid-row: 1 / 3;
     display: grid;
     gap: 50px;
+    grid-auto-rows: min-content;
 }
 
 .logo {
@@ -119,4 +121,36 @@ ul {
     border: none;
     text-align: center;
     cursor: pointer;
+}
+
+.article {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 16px;
+}
+
+.article .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+}
+
+.article .card {
+    background-color: white;
+    border-radius: 10px;
+    border-left: 10px solid var(--orange);
+    height: 220px;
+    padding: 15px;
+}
+
+.card-options {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    margin-top: 30px;
+
+}
+
+.card .project-description {
+    color: #94a3b8;
 }
